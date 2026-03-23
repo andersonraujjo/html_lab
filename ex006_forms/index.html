@@ -1,0 +1,33 @@
+<form action="/enviar" method = "POST">
+    
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome"
+    name="nome" required placeholder="Seu nome"> 
+    <!--placeholder: texto dentro da caixa-->
+    <br>
+    <br>
+
+    <!--o type é o tipo de dado: por ex type=password (caracter oculto),
+    checkbox (marcação multipla), etc-->
+
+    <!--o for é o clique inteligente, quando clicar no nome direciona o cursor para
+    a caixa do formulario.-->
+    
+    <label for="email">Email:</label>
+    <input type="text" id="email"
+    name="email" required placeholder="Seu@email.com">
+    <br>
+    <br>
+
+    <!--id = nome da identidade: quem le é css e js
+    PS: ID DEVE SER UNICO NA PAGINA PARA NÃO HAVER CONFLITO/CONFUSAO NO CSS-JS-->
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" id="mensagem" rows="4"
+    name="mensagem" required placeholder="Digite aqui sua mensagem">
+    </textarea>
+
+<!--tag text area para mensagens longas
+name = serve para o backend e banco-->
+
+<button type="submit">Enviar</button>
